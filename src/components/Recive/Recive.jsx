@@ -22,7 +22,7 @@ const Recive = () => {
                 </p>
                 <div className=""></div>
               </div>
-              <div className="text-main flex gap-2 xl:gap-14 lg:gap-14 text-nowrap w-full justify-center lg:justify-start xl:justify-start ">
+              <div className="text-main flex gap-2 xl:gap-14 lg:gap-14 text-nowrap w-full justify-center lg:justify-start xl:justify-start  ">
                 <div className="text">
                   <span className="font-bold text-white text-[25px]">
                     2000+
