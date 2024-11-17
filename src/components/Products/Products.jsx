@@ -48,7 +48,7 @@ const Products = () => {
                 >
                   {data?.products?.map((item) => {
                     return (
-                      <SwiperSlide className="">
+                      <SwiperSlide className="" key={item.id}>
                         <div className="box relative bg-gray-100/5 h-[20rem] w-[260px] rounded-lg text-white overflow-visible group hover:bg-purple-700 ">
                           <div className="img w-[200px] h-[15rem] bg-gray-100/10 rounded-lg relative -translate-y-14  mx-auto group-hover:bg-gray-50 transition-colors flex items-center justify-center ease-linear ">
                             <img src={item.image} alt="" />

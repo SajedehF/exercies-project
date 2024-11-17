@@ -31,7 +31,7 @@ const Menu = () => {
               <div className="hidden xl:flex xl:justify-between gap-10 lg:flex ">
                 {data?.menu?.map((item)=>{
                   return(
-                    <li>
+                    <li key={item.id}>
                     <a
                       href="#"
                       className="hover:text-[#6F4EFD] transition-all ease-linear"

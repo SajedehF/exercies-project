@@ -18,9 +18,9 @@ const Services = () => {
             </h2>
           </div>
           <div className="bottom flex flex-col xl:flex-row lg:flex-row xl:justify-center items-center gap-10 w-full mt-10">
-            {data.services?.map((item) => {
+            {data?.services?.map((item) => {
               return (
-                <div className="cards xl:w-[20%] lg:w-[20%] p-5 flex flex-col items-center gap-10 py-10 rounded-[15px] hover:bg-[#6F4EFD] transition-all ease-linear cursor-pointer ">
+                <div className="cards xl:w-[20%] lg:w-[20%] p-5 flex flex-col items-center gap-10 py-10 rounded-[15px] hover:bg-[#6F4EFD] transition-all ease-linear cursor-pointer " key={item.id}>
                   <img src={item.image} alt="" />
                   <h3 className="text-white font-bold text-[15px]">
                      {item.title}

@@ -17,9 +17,9 @@ const Reading = () => {
             </h2>
           </div>
           <div className="main pt-10 flex flex-col lg:justify-center xl:justify-center gap-10 lg:flex-row xl:flex-row items-center ">
-            {data.reading?.map((item)=>{
+            {data?.reading?.map((item)=>{
               return(
-                <div className="part text-white lg:w-[25%] reading-part rounded-[10px] group relative h-fit">
+                <div className="part text-white lg:w-[25%] reading-part rounded-[10px] group relative h-fit" key={item.id}>
               <div className="img w-full cursor-pointer">
                 <img src={item.image} className="w-full" alt="" />
               </div>
