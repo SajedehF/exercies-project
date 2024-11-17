@@ -3,7 +3,7 @@ import svg from "../../image/icons8-menu-50.png";
 import useSWR from "swr";
 const Menu = () => {
   const [menu, setMenu] = useState(false);
-  const { data, error } = useSWR("http://localhost:3000/menu");
+  const { data, error } = useSWR("https://sajedehf.github.io/db.json-exercies/db.json");
   if (error)
     return <h2 className="text-center text-[35px]">{error.message}</h2>;
   const clickHandler = () => {
@@ -29,7 +29,7 @@ const Menu = () => {
                 </a>
               </li>
               <div className="hidden xl:flex xl:justify-between gap-10 lg:flex ">
-                {data?.map((item)=>{
+                {data?.menu?.map((item)=>{
                   return(
                     <li>
                     <a

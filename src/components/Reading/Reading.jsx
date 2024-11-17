@@ -4,7 +4,7 @@ import reading3 from "../../image/reading3.png";
 import arrow from "../../image/Arrow---Left-Square.png";
 import useSWR from "swr";
 const Reading = () => {
-  const { data, error } = useSWR("http://localhost:3000/reading");
+  const { data, error } = useSWR("https://sajedehf.github.io/db.json-exercies/db.json");
   if (error)
     return <h2 className="text-center text-[30px]">{error.message}</h2>;
   return (
@@ -17,7 +17,7 @@ const Reading = () => {
             </h2>
           </div>
           <div className="main pt-10 flex flex-col lg:justify-center xl:justify-center gap-10 lg:flex-row xl:flex-row items-center ">
-            {data?.map((item)=>{
+            {data.reading?.map((item)=>{
               return(
                 <div className="part text-white lg:w-[25%] reading-part rounded-[10px] group relative h-fit">
               <div className="img w-full cursor-pointer">

@@ -9,7 +9,7 @@ import products3 from "../../image/products3.png";
 import { Pagination } from "swiper/modules";
 import useSWR from "swr";
 const Products = () => {
-  const { data, error } = useSWR("http://localhost:3000/products");
+  const { data, error } = useSWR("https://sajedehf.github.io/db.json-exercies/db.json");
   if (error)
     return <h2 className="text-center text-[30px]">{error.message}</h2>;
   return (
@@ -46,7 +46,7 @@ const Products = () => {
                   modules={[Pagination]}
                   className="mySwiper !h-[430px]"
                 >
-                  {data?.map((item) => {
+                  {data?.products?.map((item) => {
                     return (
                       <SwiperSlide className="">
                         <div className="box relative bg-gray-100/5 h-[20rem] w-[260px] rounded-lg text-white overflow-visible group hover:bg-purple-700 ">
