@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: IranYekan;
+  src: url("../src/fonts/Qs_Iranyekan.ttf");
+}
+body {
+  background: rgba(6, 11, 37, 1);
+  font-family: IranYekan;
+}
+.right-recive {
+  color: rgba(189, 173, 255, 1);
+}
+.box {
+  background: rgba(255, 255, 255, 0.07);
+}
+.cards {
+  background: rgba(255, 255, 255, 0.1);
+}
+.products-1 {
+  background: rgba(255, 255, 255, 0.1);
+}
+.product {
+  background: rgba(255, 255, 255, 0.1);
+}
+.gradient {
+  background: rgba(6, 11, 37, 1);
+}
+.gradient1 {
+  background: rgba(6, 11, 37, 0);
+}
+
+.praghrap {
+  color: rgba(255, 255, 255, 0.62);
+}
+.time {
+  background: rgba(255, 255, 255, 0.24);
+}
+.shadow {
+  box-shadow: 0px 10px 80px #6e6b6b;
+}
+.reading-part {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-top{
+  background: rgba(255, 255, 255, 0.12);
+}
+.icon{
+  background: rgba(255, 255, 255, 0.1);
+}
+.last{
+  background: rgba(0, 0, 0, 0.1);
+}
